@@ -1,0 +1,100 @@
+{
+    "name": "Quantum",
+    "description": "Our end-to-end storage solutions span from SSD to HDD, tape and the cloud ??? and are tied together leveraging a single namespace view of the entire data environment.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/19967-quantum.jpg",
+    "tags": [
+        "have api",
+        "surveillance"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/quantum\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Quantum",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/19967-quantum.jpg",
+            "humanURL": "http:\/\/www.quantum.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/quantum-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/quantum-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "http:\/\/blog.quantum.com\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/blog.quantum.com\/feed\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/quantum-corp"
+        },
+        {
+            "type": "Email",
+            "url": "IR@quantum.com"
+        },
+        {
+            "type": "Email",
+            "url": "PR@quantum.com"
+        },
+        {
+            "type": "Email",
+            "url": "Christine.bachmayer@quantum.com"
+        },
+        {
+            "type": "Email",
+            "url": "jim.simon@quantum.com"
+        },
+        {
+            "type": "Email",
+            "url": "info.uk@quantum.com"
+        },
+        {
+            "type": "Email",
+            "url": "info.de@quantum.com"
+        },
+        {
+            "type": "Email",
+            "url": "info.france@quantum.com"
+        },
+        {
+            "type": "Email",
+            "url": "ANZsales@quantum.com"
+        },
+        {
+            "type": "Email",
+            "url": "china.marketing@quantum.com"
+        },
+        {
+            "type": "Email",
+            "url": "china.sales@quantum.com"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/QuantumCorp"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.quantum.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.quantum.com\/"
+        }
+    ]
+}
