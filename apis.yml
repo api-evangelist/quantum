@@ -1,8 +1,23 @@
 aid: quantum
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/quantum.png
 name: Quantum
-description: Quantum is a company surfaced as a portfolio company of 500-global, mayfield and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Quantum is a Saudi Arabian advertising-technology (adtech) enabler that bridges online
+  publishers and advertisers with data and technology. Its Quantum One omnichannel platform connects
+  online and offline retail experiences across programmatic ads, in-app media buying, e-sampling,
+  on-ground activations, influencer marketing, and out-of-home media, with goal-attainment tracking,
+  ROI measurement, customer-engagement analytics, and conversion-rate analysis. As of this enrichment
+  pass the company publishes no public developer API, documentation, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/quantum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,15 +28,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Advertising
+- AdTech
+- Marketing
+- Programmatic
+- Omnichannel
+- Retail Media
+- Saudi Arabia
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/quantum-domain-security.yml
 - type: Website
   url: https://quantums.com.sa
