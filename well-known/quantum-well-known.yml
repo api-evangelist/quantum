@@ -1,0 +1,135 @@
+generated: '2026-08-12'
+method: probed
+source: live HTTP probes of every Quantum host found in apis.yml and on the marketing site
+note: >-
+  Every well-known path returned 404 on every host. No pointer of type WellKnown or
+  SecurityTxt is emitted from this file, because nothing was served — this artifact
+  records a verified ABSENCE, not a presence. The quantums.com.sa / quantums.sa
+  origin answers 404 with a bare nginx error page; app.one.quantums.com.sa is a
+  Next.js application that answers 404 with its own HTML shell (confirmed against a
+  control path, /nonexistent-xyz123, which also 404s, so the app is not a catch-all).
+hosts_probed:
+- quantums.com.sa
+- quantums.sa
+- app.one.quantums.com.sa
+- api.quantums.com.sa
+paths:
+- host: quantums.com.sa
+  path: /.well-known/security.txt
+  status: 404
+  file: null
+- host: quantums.com.sa
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- host: quantums.com.sa
+  path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- host: quantums.com.sa
+  path: /.well-known/api-catalog
+  status: 404
+  file: null
+- host: quantums.com.sa
+  path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- host: quantums.com.sa
+  path: /.well-known/agent-card.json
+  status: 404
+  file: null
+- host: quantums.com.sa
+  path: /.well-known/agent.json
+  status: 404
+  file: null
+- host: quantums.com.sa
+  path: /llms.txt
+  status: 404
+  file: null
+- host: quantums.com.sa
+  path: /robots.txt
+  status: 404
+  file: null
+- host: quantums.com.sa
+  path: /sitemap.xml
+  status: 404
+  file: null
+- host: quantums.sa
+  path: /.well-known/security.txt
+  status: 404
+  file: null
+- host: quantums.sa
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- host: quantums.sa
+  path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- host: quantums.sa
+  path: /.well-known/api-catalog
+  status: 404
+  file: null
+- host: quantums.sa
+  path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- host: quantums.sa
+  path: /.well-known/agent-card.json
+  status: 404
+  file: null
+- host: quantums.sa
+  path: /.well-known/agent.json
+  status: 404
+  file: null
+- host: app.one.quantums.com.sa
+  path: /.well-known/security.txt
+  status: 404
+  file: null
+- host: app.one.quantums.com.sa
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- host: app.one.quantums.com.sa
+  path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- host: app.one.quantums.com.sa
+  path: /.well-known/api-catalog
+  status: 404
+  file: null
+- host: app.one.quantums.com.sa
+  path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- host: app.one.quantums.com.sa
+  path: /.well-known/agent-card.json
+  status: 404
+  file: null
+- host: app.one.quantums.com.sa
+  path: /.well-known/agent.json
+  status: 404
+  file: null
+- host: app.one.quantums.com.sa
+  path: /llms.txt
+  status: 404
+  file: null
+- host: api.quantums.com.sa
+  path: /.well-known/oauth-protected-resource
+  status: 404
+  file: null
+  note: >-
+    TLS on this host does not validate — the certificate presented is
+    CN=*.mcp.ac.cequence.ai (SANs cover only *.mcp.ac.cequence.ai), which does not
+    cover api.quantums.com.sa. Probed with verification disabled purely to record the
+    response; every path returns an empty 404 text/plain body. The DNS A record
+    (3.134.120.240, us-east-2 EC2) appears dangling or mis-delegated, so nothing
+    served here can be attributed to Quantum and nothing from it was saved.
+contract_discovery:
+  openapi: not-found
+  graphql: not-found
+  mcp: not-found
+  agent_card: not-found
+  detail: >-
+    /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs, /docs,
+    /redoc and /graphql were probed on all four hosts above. Every one returned 404.

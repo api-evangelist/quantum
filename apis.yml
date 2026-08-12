@@ -17,7 +17,9 @@ description: Quantum is a Saudi Arabian advertising-technology (adtech) enabler 
   online and offline retail experiences across programmatic ads, in-app media buying, e-sampling,
   on-ground activations, influencer marketing, and out-of-home media, with goal-attainment tracking,
   ROI measurement, customer-engagement analytics, and conversion-rate analysis. As of this enrichment
-  pass the company publishes no public developer API, documentation, or developer portal.
+  pass the company publishes no public developer API, documentation, or developer portal; the Quantum
+  One tenant application does carry an API-key management screen, so the platform issues keys to
+  signed-in customers, but no contract, reference, or machine-readable spec is published anywhere.
 url: https://raw.githubusercontent.com/api-evangelist/quantum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -28,7 +30,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-08-12'
 tags:
 - Company
 - Advertising
@@ -45,12 +47,38 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 x-enrichment:
-  date: '2026-07-20'
+  date: '2026-08-12'
   status: minimal
-  artifacts_added: 1
+  artifacts_added: 4
   pass: local-v1
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    Quantum's only API surface is an /apikeys screen inside the login-gated Quantum One
+    tenant app at app.one.quantums.com.sa; the marketing site is a single WordPress page
+    with no developer section, and every contract and /.well-known path 404s on all four
+    Quantum hosts.
+  evidence:
+  - url: https://app.one.quantums.com.sa/apikeys
+    status: 200
+  - url: https://quantums.com.sa/openapi.json
+    status: 404
+  - url: https://quantums.com.sa/.well-known/api-catalog
+    status: 404
+  - url: https://app.one.quantums.com.sa/.well-known/agent-card.json
+    status: 404
+  checked: '2026-08-12'
 common:
 - type: DomainSecurity
   url: security/quantum-domain-security.yml
 - type: Website
   url: https://quantums.com.sa
+- type: Login
+  url: https://app.one.quantums.com.sa
+- type: Plans
+  url: plans/quantum-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/quantum-rate-limits.yml
+- type: LLMsTxt
+  url: llms/quantum-llms.txt

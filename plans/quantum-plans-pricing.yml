@@ -1,0 +1,21 @@
+generated: '2026-08-12'
+method: searched
+source: https://quantums.com.sa/
+plan_count: 0
+currency: null
+plans: []
+note: >-
+  Quantum publishes no pricing, plans, or rate card of any kind. The marketing site
+  (quantums.com.sa, canonical https://quantums.sa/) is a single page whose only
+  commercial call to action is "Book A Demo", which links to a Calendly consultation
+  booking (https://calendly.com/quantum-consultation/qmp). There is no pricing page,
+  no plan comparison, and no self-serve sign-up — access to the Quantum One platform
+  runs entirely through a sales conversation. Recorded as an honest zero rather than
+  omitted, so the absence is legible as a measurement.
+evidence:
+- url: https://quantums.com.sa/
+  status: 200
+  finding: single-page site, no pricing section, "Book A Demo" is the only CTA
+- url: https://quantums.sa/
+  status: 200
+  finding: same document (canonical), no pricing section

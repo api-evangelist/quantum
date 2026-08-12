@@ -1,0 +1,21 @@
+generated: '2026-08-12'
+method: searched
+source: https://quantums.com.sa/
+limit_count: 0
+limits: []
+headers: []
+note: >-
+  No rate limits are documented anywhere Quantum publishes, because Quantum publishes
+  no developer documentation at all — there is no developer portal, no API reference,
+  and no machine-readable contract on any host it controls. The Quantum One tenant
+  application (https://app.one.quantums.com.sa) does carry an /apikeys route, so the
+  platform issues API keys to customers and a rate-limiting posture almost certainly
+  exists behind the login; none of it is published, so nothing can be recorded here.
+  Recorded as an honest zero rather than omitted.
+evidence:
+- url: https://quantums.com.sa/
+  status: 200
+  finding: no developer or documentation section
+- url: https://app.one.quantums.com.sa/apikeys
+  status: 200
+  finding: API-key management route exists in the tenant app but renders only after login
